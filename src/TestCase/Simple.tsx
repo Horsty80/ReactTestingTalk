@@ -1,11 +1,7 @@
+import { meetupsMock } from "../mocks/mockMeetup";
+
 function Simple() {
-  const meetups = [
-    {name: "Touraine Tech", date: "2025-02-06", location: "Tours" },
-    {name: "DevQuest", date: "2025-06-12", location: "Niort" },
-    { name: 'Devfest', date: '2025-10-16', location: 'Nantes' },
-    {name: "Devoxx", date: "2025-04-16", location: "Paris" },
-    
-  ];
+  
 
   return (
     <div className="">
@@ -19,7 +15,7 @@ function Simple() {
           </tr>
         </thead>
         <tbody>
-          {meetups.map((meetup, index) => (
+          {meetupsMock.map((meetup, index) => (
             <tr key={index}>
               <td>{meetup.name}</td>
               <td>{meetup.date}</td>
